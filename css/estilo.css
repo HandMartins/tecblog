@@ -9,7 +9,7 @@ body{
     background: #e6e6e6;
 }
 
-/*AREA CABEÇALHO*/
+/*========AREA CABEÇALHO========*/
 
 #area-cabecalho{
     background-color: #f7b600;
@@ -21,7 +21,44 @@ body{
     padding: 10px;
 }
 
-/*FORMATACAO DO MENU*/
+#area-principal{
+    width: 920px;
+    margin: 0 auto;
+}
+
+#area-postagens, #area-lateral{
+    background: orange;
+}
+
+
+#area-postagens {
+    width: 660px;
+    float: left;
+}
+
+#area-lateral{
+    width: 240px;
+    float: right;
+}
+
+.postagem {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+#rodape{
+    background: #CCC;
+    clear: both;     /*retirando o espaçamento*/
+    text-align: center;
+    padding: 15px;
+}
+
+img{
+    width: 620px;
+}
+
+/*========FORMATACAO DO MENU========*/
 a{
     text-decoration: none; /*retirando o underline*/
 }
@@ -37,7 +74,7 @@ a:hover{
     background: #fff;
 }
 
-/*FORMATACOES EM GERAL*/
+/*========FORMATACOES EM GERAL========*/
 h1{
     color: #4e4e4e;
     font-size: 2.5em;
