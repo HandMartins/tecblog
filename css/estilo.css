@@ -24,6 +24,7 @@ body{
 #area-principal{
     width: 920px;
     margin: 0 auto;
+    padding: 15px;
 }
 
 #area-postagens, #area-lateral{
@@ -63,13 +64,13 @@ a{
     text-decoration: none; /*retirando o underline*/
 }
 
-a:link, a:visited{   /* Selecionando os estados*/
+#area-cabecalho a:link, #area-cabecalho a:visited{   /* Selecionando os estados para apenas os links dentro de cabecalho*/
     color: #fff;
     padding: 8px 12px;
 
 }
 
-a:hover{
+#area-cabecalho a:hover{
     color: #f7b600; /* Cor das letras ao passar o mouse por cima*/
     background: #fff;
 }
@@ -81,6 +82,18 @@ h1{
 
 }
 
+h2{
+    color: #f7b600;
+}
+
 .branco{
     color: white;
+}
+
+.data-postagem{
+    font-size: 0.8em ; /**/
+    border-bottom: 1px solid #f4f4f4; /*Grossura da borda inferior*/
+    padding-bottom: 10px;
+    margin-bottom: 10px; /*Espaçamento da margem inferior*/
+    display: block; /*Por padrão o span não completa a lacuna até o final do container, ou seja, precisa indicar o preenchimento até o limite final*/
 }
