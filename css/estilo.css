@@ -27,11 +27,6 @@ body{
     padding: 15px;
 }
 
-#area-postagens, #area-lateral{
-    background: orange;
-}
-
-
 #area-postagens {
     width: 660px;
     float: left;
@@ -46,6 +41,18 @@ body{
     padding: 20px;
     margin-bottom: 20px;
     background: white;
+}
+
+.conteudo-lateral{
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.postagem-lateral{
+    font: 0.8em;
+    padding: 5px;
+    border-bottom: 1px dotted #CCC; /*apresentando a borda como uma span e pontilhando a mesma*/
 }
 
 #rodape{
@@ -64,7 +71,18 @@ a{
     text-decoration: none; /*retirando o underline*/
 }
 
-#area-cabecalho a:link, #area-cabecalho a:visited{   /* Selecionando os estados para apenas os links dentro de cabecalho*/
+a:link, a:visited{   /* Selecionando os estados(do link) para apenas os links dentro de cabecalho*/
+    color: #f7b600;
+
+}
+
+a:hover{
+    text-decoration: underline;
+    /* color: #f7b600; Cor das letras ao passar o mouse por cima */
+    /* background: #fff; */
+}
+
+#area-cabecalho a:link, #area-cabecalho a:visited{   /* Selecionando os estados(do link) para apenas os links dentro de cabecalho*/
     color: #fff;
     padding: 8px 12px;
 
@@ -73,6 +91,7 @@ a{
 #area-cabecalho a:hover{
     color: #f7b600; /* Cor das letras ao passar o mouse por cima*/
     background: #fff;
+    text-decoration: none;
 }
 
 /*========FORMATACOES EM GERAL========*/
@@ -86,6 +105,12 @@ h2{
     color: #f7b600;
 }
 
+h3{
+    color: #565656;
+    background: #CCC;
+    padding: 5px;
+}
+
 .branco{
     color: white;
 }
@@ -97,3 +122,4 @@ h2{
     margin-bottom: 10px; /*Espaçamento da margem inferior*/
     display: block; /*Por padrão o span não completa a lacuna até o final do container, ou seja, precisa indicar o preenchimento até o limite final*/
 }
+
